@@ -1,0 +1,23 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Notification.Avalonia.Views.InputView">
+  <Grid>
+      <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="15" />
+          <ColumnDefinition Width="Auto" />
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="5" />
+      </Grid.RowDefinitions>
+      <TextBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" TextWrapping="Wrap" AcceptsReturn="True"  Text="{Binding Path=Text}" />
+      <Button Grid.Column="2" Grid.Row="0"  Command="{Binding ClickSend}">
+          <TextBlock Text=" > "/>
+      </Button>
+  </Grid>
+</UserControl>
