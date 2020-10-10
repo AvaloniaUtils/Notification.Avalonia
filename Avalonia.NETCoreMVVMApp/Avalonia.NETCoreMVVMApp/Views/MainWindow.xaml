@@ -12,6 +12,8 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+   <Grid>
+       <Button Command="{Binding Show}">Show notify</Button>
+   </Grid>
 
 </Window>

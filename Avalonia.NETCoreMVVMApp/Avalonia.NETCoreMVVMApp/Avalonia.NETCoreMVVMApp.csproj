@@ -18,4 +18,7 @@
         <PackageReference Include="Avalonia.Desktop" Version="0.10.999-cibuild0011267-beta" />
         <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.999-cibuild0011267-beta" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\Notification.Avalonia\Notification.Avalonia.csproj" />
+    </ItemGroup>
 </Project>
