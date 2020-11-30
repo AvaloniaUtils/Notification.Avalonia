@@ -56,6 +56,7 @@ namespace Notification.Avalonia
         public async Task Show(string title, string text, int? timeShow = 5000)
         {
             var w = new NotificationWindow();
+            w.ShowInTaskbar = false;
             w.DataContext = new NotificationWindowViewModel(title, text, w);
             w.Show();
             w.Closed += delegate { Reposition(); };
